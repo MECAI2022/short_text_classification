@@ -1,2 +1,2 @@
-# short_text_classification
+# Short Text Classification
 Projeto
