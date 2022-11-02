@@ -188,5 +188,6 @@ class pre_process_text:
         word = ' '.join(lst_text)
         
         word = re.sub(r'\b\D\s\b', '',word)
+        word = re.sub(r'\s+', ' ',word)
         
         return word
