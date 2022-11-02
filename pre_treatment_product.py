@@ -186,5 +186,7 @@ class pre_process_text:
                     
         ## back to string from list
         word = ' '.join(lst_text)
-
+        
+        word = re.sub(r'\b\D\s\b', '',word)
+        
         return word
