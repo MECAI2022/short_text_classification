@@ -48,8 +48,7 @@ class pre_process_text:
 
     @staticmethod
     def extract_string(regex_str,word):
-
-
+      
         unit = re.findall(regex_str,word)
                                                 
         if unit:
@@ -63,14 +62,8 @@ class pre_process_text:
     def transform(self,word):
 
         #Lower case letters
-        try:
-          word = word.lower()
-          
-        except:
-          
-          print(word)
-          
-          raise 'Not String'
+
+        word = word.lower()
           
         #Remove special char
 
