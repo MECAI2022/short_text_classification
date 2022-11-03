@@ -2,6 +2,7 @@ import re
 import nltk
 import pandas as pd
 from unicodedata import normalize
+import numpy as np
 nltk.download('stopwords')
 nltk.download('wordnet')
 
