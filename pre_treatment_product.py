@@ -65,7 +65,7 @@ class pre_process_text:
         #Lower case letters
 
         word = word.lower()
-
+        print(word)
         #Remove special char
 
         word = normalize('NFKD', word).encode('ASCII', 'ignore').decode('ASCII')
