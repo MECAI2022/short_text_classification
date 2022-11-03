@@ -63,9 +63,15 @@ class pre_process_text:
     def transform(self,word):
 
         #Lower case letters
-
-        word = word.lower()
-        print(word)
+        try:
+          word = word.lower()
+          
+        except:
+          
+          print(word)
+          
+          raise 'Not String'
+          
         #Remove special char
 
         word = normalize('NFKD', word).encode('ASCII', 'ignore').decode('ASCII')
