@@ -189,5 +189,6 @@ class pre_process_text:
         
         word = re.sub(r'\b\D\s\b', '',word)
         word = re.sub(r'\s+', ' ',word)
+        word = word.strip()
         
         return word
